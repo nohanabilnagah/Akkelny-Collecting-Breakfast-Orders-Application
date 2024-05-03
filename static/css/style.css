@@ -1,0 +1,267 @@
+* {
+  box-sizing: none;
+  margin: 0%;
+  padding: 0%;
+}
+/* //////////////  Text && Links  ///////////////// */
+a,
+.text-card,
+.line-two,
+h3,
+span,
+.add,
+.btnSubmit,
+.root {
+  font-family: serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+span {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+/* /////////////  Buttons  ///////////////////  */
+.btnSubmit,
+.add {
+  width: 10em;
+  height: 2.3em;
+  border-radius: 10em;
+  color: white;
+  background-color: black;
+}
+
+.add:hover,
+.btnSubmit:hover {
+  width: 10em;
+  height: 2.3em;
+  border-radius: 10em;
+  color: black;
+  background-color: #ffc800a4;
+}
+/* ////////////////  Color  ///////////////// */
+
+.part-two,
+.sectionOne,
+.sectionThree,
+thead,
+tfoot {
+  background: #ffc800a4;
+}
+
+.root,
+.card,
+table,
+td {
+  border-color: #ffc800a4;
+  border-width: 1px;
+  border-style: solid;
+}
+footer {
+  background-color: black;
+}
+thead,
+tfoot {
+  color: #fff;
+}
+a:hover {
+  color: #ffc800a4;
+  font-weight: bold;
+}
+
+/* ////////////////  Navbar  ///////////////// */
+nav,
+.sign-nav,
+.links-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.image-nav {
+  width: 25%;
+}
+.logo {
+  width: 12em;
+}
+
+.links-nav {
+  width: 40%;
+  justify-content: space-around;
+}
+
+.sign-nav {
+  width: 25%;
+}
+
+/* ////////////// Section One /////////////// */
+
+.main {
+  display: flex;
+}
+
+.part-one {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.picture-one {
+  width: 85%;
+  height: 80%;
+}
+.part-two {
+  width: 60%;
+  height: 82.5vh;
+  border-top-left-radius: 390px;
+  border-bottom-left-radius: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 20%;
+  margin: 1em;
+}
+.lineThree-text {
+  margin-top: 0.5em;
+}
+
+.form-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName,
+.Workspace {
+  margin: 0.4em;
+  width: 20em;
+  height: 2em;
+  border-radius: 10em;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: sans-serif;
+  text-align: center;
+}
+.btnSubmit {
+  margin-left: 1em;
+}
+
+/* ////////////// Footer  /////////////// */
+
+footer {
+  height: 5vh;
+}
+
+/* ////////////// Food  /////////////// */
+
+.mainFood {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.sectionOne,
+.sectionThree {
+  width: 10%;
+  height: 82.5vh;
+}
+.sectionTwo {
+  height: 82.5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.from-one {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 80%;
+}
+.from-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* //////////////////////////////// */
+.card {
+  height: 12em;
+  width: 12em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+.card-img {
+  width: 8em;
+  height: 6em;
+}
+
+.text-card,
+.card-img,
+.insert {
+  margin: 0.4em;
+}
+.text-card {
+  font-size: 15px;
+}
+.insert {
+  border-radius: 1em;
+  height: 1.5em;
+  width: 6em;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/* ////////////// Orders  /////////////// */
+
+.orders {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.root {
+  width: 80%;
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: first baseline;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 2em;
+}
+
+table,
+td {
+  margin-top: 20px;
+  width: 30%;
+  height: 15%;
+  text-align: center;
+  margin-right: 20px;
+  padding: 1.5px;
+}

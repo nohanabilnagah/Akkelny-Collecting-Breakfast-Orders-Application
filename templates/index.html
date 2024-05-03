@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static' , filename='css/style.css')}}"
+    />
+    <title>akkelny</title>
+  </head>
+  <body>
+    <nav>
+      <div class="image-nav">
+        <a href="/">
+          <img
+            class="logo"
+            src="{{url_for('static' , filename='imgs/logo.jpg')}}"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <div class="links-nav">
+        <a href="/index">Home</a>
+        <a href="/food">Food List</a>
+        <a href="/orders">Orders</a>
+      </div>
+      <div class="sign-nav"></div>
+    </nav>
+    <section class="main">
+      <div class="part-one">
+        <img
+          class="picture-one"
+          src="{{url_for('static', filename='imgs/pic 01.jpg')}}"
+          alt="picture"
+        />
+      </div>
+      <div class="part-two">
+        <h3 class="line-one">
+          Welcome to <span class="text-akkelny">AKKELNY!</span>
+        </h3>
+        <div class="line-two">
+          <h4 class="lineTwo-text">
+            <span class="text-akkelny"> AKKELNY </span>is a funny and easy way
+            to decide
+          </h4>
+          <h4 class="lineThree-text">
+            what to eat with your colleagues or friends!
+          </h4>
+        </div>
+        <form class="form-main" action="/add-workspace" method="post">
+          <div class="login">
+            <input
+              type="text"
+              class="userName"
+              placeholder="User Name"
+              name="user_name"
+            />
+            <input
+              type="text"
+              class="Workspace"
+              placeholder="Workspace"
+              name="Workspace_name"
+            />
+          </div>
+          <input class="btnSubmit" type="submit" />
+        </form>
+      </div>
+    </section>
+    <footer></footer>
+    <script src="{{url_for('static' , filename='js/javaScript.js')}}"></script>
+  </body>
+</html>

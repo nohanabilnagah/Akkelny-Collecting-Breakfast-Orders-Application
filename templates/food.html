@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static' , filename='css/style.css')}}"
+    />
+    <title>Food</title>
+  </head>
+  <body>
+    <nav>
+      <div class="image-nav">
+        <a href="/">
+          <img
+            class="logo"
+            src="{{url_for('static' , filename='imgs/logo.jpg')}}"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <div class="links-nav">
+        <a href="/">Home</a>
+        <a href="/food">Food List</a><a href="/orders">Orders</a>
+      </div>
+      <div class="sign-nav"></div>
+    </nav>
+    <section class="mainFood">
+      <section class="sectionOne"></section>
+      <section class="sectionTwo">
+        <form action="/add-order/{{info[0]}}/{{info[1]}}" method="post" class="sectionTwo">
+         <div class="from-one">
+           <div class="card">
+          <img class="card-img" src="{{url_for('static',filename='imgs/01.jpg')}}" alt="" />
+          <h3 class="text-card">Ta3meya</h3>
+          <input class="insert" name="Ta3meya"  type="number" placeholder="0"  />
+        </div>
+        <div class="card">
+          <img class="card-img" src="{{url_for('static',filename='imgs/02.jpg')}}" alt="" />
+          <h3 class="text-card">Ta3meya M7sheya</h3>
+          <input class="insert" type="number" placeholder="0" name="Ta3meya M7sheya"/>
+        </div>
+        <div class="card">
+          <img class="card-img" src="{{url_for('static',filename='imgs/03.jpg')}}" alt="" />
+          <h3 class="text-card">Ta3meya Ors</h3>
+          <input class="insert" type="number" placeholder="0"  name="Ta3meya Ors"/>
+        </div>
+        <div class="card">
+          <img class="card-img" src="{{url_for('static',filename='imgs/05.jpg')}}" alt="" />
+          <h3 class="text-card">Sawab3</h3>
+          <input class="insert" type="number" placeholder="0" name="Sawab3"/>
+        </div>
+        <div class="card">
+          <img class="card-img" src="{{url_for('static',filename='imgs/05.jpg')}}" alt="" />
+          <h3 class="text-card">Fries</h3>
+          <input class="insert" type="number" placeholder="0"  name="Fries"/>
+        </div>
+        <div class="card">
+          <img class="card-img" src="{{url_for('static',filename='imgs/06.jpg')}}" alt="" />
+          <h3 class="text-card">Fool Sada</h3>
+          <input class="insert" type="number" placeholder="0"  name="Fool Sada"/>
+        </div>
+        <div class="card">
+          <img class="card-img" src="{{url_for('static',filename='imgs/07.jpg')}}" alt="" />
+          <h3 class="text-card">Fool Eskandarany</h3>
+          <input class="insert" type="number" placeholder="0" name="Fool Eskandarany"/>
+        </div>
+        <div class="card">
+          <img class="card-img" src="{{url_for('static',filename='imgs/08.jpg')}}" alt="" />
+          <h3 class="text-card">Fool Taba2</h3>
+          <input class="insert" type="number" placeholder="0"  name="Fool Taba2"/>
+        </div>
+        <div class="card">
+          <img class="card-img" src="{{url_for('static',filename='imgs/09.jpg')}}" alt="" />
+          <h3 class="text-card">Btengaan</h3>
+          <input class="insert" type="number" placeholder="0"  name="Btengaan"/>
+        </div>
+        <div class="card">
+          <img class="card-img" src="{{url_for('static',filename='imgs/10.jpg')}}" alt="" />
+          <h3 class="text-card">Chipsy</h3>
+          <input class="insert" type="number" placeholder="0" name="Chipsy"/>
+        </div>
+        <div/>
+        <div class="from-two">
+          <input type="submit" class="add" value="Add">
+          <div/>
+        </form>
+      </section>
+      <section class="sectionThree"></section>
+    </section>
+    <footer></footer>
+    <script src="{{url_for('static', filename='javaScript/javaScript.js')}}"></script>
+  </body>
+</html>
